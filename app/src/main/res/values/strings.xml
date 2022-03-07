@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WorkManagerAndCoroutines</string>
+    <string name="btn_start_work_text">Start Work</string>
+    <string name="btn_work_status_txt">Work Status</string>
+    <string name="btn_reset_status_txt">reset Status</string>
+    <string name="btn_work_ui_txt">Work on ui thread</string>
+</resources>
