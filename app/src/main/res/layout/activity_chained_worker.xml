@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChainedWorkerActivity">
+
+    <Button
+        android:id="@+id/btn_single_succeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="single chain succeed"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_single_fail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="single chain fail"
+        app:layout_constraintEnd_toEndOf="@id/btn_single_succeed"
+        app:layout_constraintStart_toStartOf="@id/btn_single_succeed"
+        app:layout_constraintTop_toBottomOf="@id/btn_single_succeed" />
+
+    <Button
+        android:id="@+id/btn_group_succeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="group chain succeed"
+        app:layout_constraintEnd_toEndOf="@id/btn_single_succeed"
+        app:layout_constraintStart_toStartOf="@id/btn_single_succeed"
+        app:layout_constraintTop_toBottomOf="@id/btn_single_fail" />
+
+    <Button
+        android:id="@+id/btn_group_fail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="group chain fail"
+        app:layout_constraintEnd_toEndOf="@id/btn_single_succeed"
+        app:layout_constraintStart_toStartOf="@id/btn_single_succeed"
+        app:layout_constraintTop_toBottomOf="@id/btn_group_succeed" />
+
+    <Button
+        android:id="@+id/btn_multiple_succeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Multiple chain Succeed"
+        app:layout_constraintEnd_toEndOf="@id/btn_single_succeed"
+        app:layout_constraintStart_toStartOf="@id/btn_single_succeed"
+        app:layout_constraintTop_toBottomOf="@id/btn_group_fail" />
+
+    <Button
+        android:id="@+id/btn_multiple_fail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Multiple chain fail"
+        app:layout_constraintEnd_toEndOf="@id/btn_single_succeed"
+        app:layout_constraintStart_toStartOf="@id/btn_single_succeed"
+        app:layout_constraintTop_toBottomOf="@id/btn_multiple_succeed" />
+</androidx.constraintlayout.widget.ConstraintLayout>
